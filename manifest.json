@@ -1,0 +1,26 @@
+{
+  "name": "NextPlay",
+  "version": "1.0.0",
+  "description": "A Youtube Chrome Extension that allows you queue up and automatically play the videos you like",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["src/js/background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "src/html/popup.html",
+    "default_icon": {
+      "16": "src/assets/images/play.png",
+      "32": "src/assets/images/play.png",
+      "48": "src/assets/images/play.png",
+      "128": "src/assets/images/play.png"
+    }
+  },
+  "icons": {
+    "16": "src/assets/images/play.png",
+    "32": "src/assets/images/play.png",
+    "48": "src/assets/images/play.png",
+    "128": "src/assets/images/play.png"
+  },
+  "permissions": ["storage", "declarativeContent", "activeTab"]
+}
