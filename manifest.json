@@ -16,6 +16,12 @@
       "128": "src/assets/images/play.png"
     }
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["src/js/main.js"]
+    }
+  ],
   "icons": {
     "16": "src/assets/images/play.png",
     "32": "src/assets/images/play.png",
